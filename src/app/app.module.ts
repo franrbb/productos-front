@@ -8,13 +8,15 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ProductosComponent } from './pages/productos/productos.component';
+import { DetalleComponent } from './pages/detalle/detalle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    ProductosComponent
+    ProductosComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,6 @@
+<div class="alert alert-info" *ngIf="productos?.length == 0">
+  No hay registros en la base de datos
+</div>
 <table class="table">
     <thead>
       <tr>
@@ -13,6 +16,7 @@
         <td>{{ producto.nombre}}</td>
         <td>{{ producto.precio}} €</td>
         <td>{{ producto.createAt | date:"dd/MM/yy"}}</td>
+        <td><button type="button" class="btn btn-primary" [routerLink]="[ '/detalle', producto.id ]">Ver detalle</button></td>
       </tr>
     </tbody>
   </table>
